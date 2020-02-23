@@ -1,15 +1,13 @@
 package com.example.bill.ui.main
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 
-class MainViewModel : ViewModel() {
+class MainViewModel(application: Application) : AndroidViewModel(application) {
 
-    fun Bill(){
+    private val repository = com.example.bill.repository.repository.getInstance(application)
 
-    }
+    val State = repository.Now_State()
 
-    fun Account(){
-
-    }
 
 }

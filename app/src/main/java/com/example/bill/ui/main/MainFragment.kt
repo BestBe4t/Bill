@@ -29,11 +29,9 @@ class MainFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
         message.setText("Hello World!")
-        Capture_Bill.setOnClickListener {
-            viewModel.Bill()
-        }
-        Account_Book.setOnClickListener{
-            viewModel.Account()
+
+        Capture_Bill.setOnClickListener{
+
         }
     }
 }
